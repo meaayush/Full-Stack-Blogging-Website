@@ -52,6 +52,10 @@
     cursor: pointer;
 }
 
+.sidebarListItem:hover{
+    color: rgb(71, 138, 139);
+}
+
 .sidebarSocial{
     margin-top: 15px;
     width: 250px;

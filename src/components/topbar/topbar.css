@@ -24,8 +24,12 @@
 .topIcon{
     font-size: 20px;
     margin-right: 10px;
-    color: #444;
+    color: #444444;
     cursor: pointer;
+}
+
+.topIcon:hover{
+    color: #f45dad;
 }
 
 .topImg{
@@ -48,6 +52,10 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
+}
+
+.topListItem:hover{
+    color: #f45dad;
 }
 
 .topSearchIcon{
