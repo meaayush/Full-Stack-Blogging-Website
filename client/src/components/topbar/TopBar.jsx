@@ -1,0 +1,94 @@
+import { Link } from "react-router-dom";
+import "./topbar.css"
+import { useContext } from "react";
+import { Context } from "../../context/Context";
+
+export default function TopBar() {
+    const {user, dispatch} = useContext(Context);
+
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT" });
+    }
+
+    let initial = user ? (user.username[0]) : ""
+    const PF = "http://localhost:5000/images/"
+    // console.log(user.profilePic)
+  return (
+    <div className="top">
+        <div className="topLeft">
+            {/* <i class="fa-brands fa-facebook"></i> */}
+            <a href="http://facebook.com" target="_blank">
+                <i className="topIcon fa-brands fa-square-facebook"></i>
+            </a> 
+            <a href="http://twitter.com" target="_blank">
+                <i className="topIcon fa-brands fa-square-twitter"></i>
+            </a>
+            <a href="http://pinterest.com" target="_blank">
+                <i className="topIcon fa-brands fa-square-pinterest"></i>
+            </a>
+            <a href="http://instagram.com" target="_blank">
+                <i className="topIcon fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+        <div className="topCenter">
+            <ul className="topList">
+                <li className="topListItem">
+                    <Link to="/" className="link">HOME</Link>    
+                </li>
+                <li className="topListItem">
+                    <Link to="/about" className="link">ABOUT</Link>    
+                </li>
+                <li className="topListItem">
+                    <Link to="/contact" className="link">CONTACT</Link>    
+                </li>
+                <li className="topListItem">
+                    <Link to="/newblog" className="link">NEW-BLOG</Link>    
+                </li>
+                <li className="topListItem" onClick={handleLogout}>
+                    {user && "LOGOUT"}  
+                </li>
+            </ul>
+        </div>
+        <div className="topRight">
+            {
+                user ? 
+                (
+                    <Link to="/profile" className="link">
+                    {   user.profilePic ?
+                        <img className="topImg" src={PF + user.profilePic} alt="profile-pic" />
+                        :
+                        <div className="topImg" 
+                            style={{
+                                backgroundColor:"#176B87", 
+                                display:"flex",
+                                justifyContent: 'center', 
+                                alignItems: 'center', 
+                                color: 'white', 
+                                fontSize: "18px", 
+                                textTransform: 'uppercase', 
+                                textAlign: 'center',
+                                paddingTop: '2px',
+                            }}>
+                            {initial}
+                        </div>
+                    }
+                    </Link>
+                )
+                :
+                (
+                    <ul className="topList">
+                        <li className="topListItem">
+                            <Link className="link" to="/login">LOGIN</Link>   
+                        </li>
+                        <li className="topListItem">
+                            <Link className="link" to="/register">REGISTER</Link>  
+                        </li>
+                    </ul>
+                )
+            }
+            
+            <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+  )
+}

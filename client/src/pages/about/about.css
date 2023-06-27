@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800;900&family=Ysabeau+Infant:wght@300;400;500;600;700&display=swap');
+
+.aboutContainer{
+    /* background-color: blue; */
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headingAbout{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.line{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgba(225, 215, 215, 0.748);
+}
+
+.pointsBrief{
+    font-size: 1.4rem;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.headingPoints{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 1.6rem;
+    color: rgb(235, 135, 41);
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.headingPoints:hover{
+    margin-left: 4px;
+}
+
+.subPoints{
+    padding-left: 2%;
+    font-size: 1.2rem;
+    color: rgb(72, 76, 76);
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.thank{
+    margin-top: 4%;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.pblog{
+    color: rgb(255, 111, 0);
+    display: inline;
+    font-family: 'Ysabeau Infant', sans-serif;
+}

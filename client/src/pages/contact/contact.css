@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800;900&family=Ysabeau+Infant:wght@300;400;500;600;700&display=swap');
+
+.contactContainer {
+    /* background-color: blue; */
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headingContact {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.line {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgba(225, 215, 215, 0.748);
+}
+
+.contactBrief {
+    font-size: 1.4rem;
+    font-family: 'Ysabeau Infant', sans-serif;
+    text-align: center;
+    margin-top: 22%;
+    padding: 8%;
+    color: white;
+}
+
+.contactDetails {
+    display: flex;
+}
+
+.leftContact {
+    width: 50%;
+    background-color: rgb(45, 127, 127);
+    border-radius: 6px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.rightContact {
+    width: 50%;
+    /* background-color: pink; */
+}
+
+.rightContact>h1,
+label,
+input {
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.formInputContact {
+    font-size: 16px;
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    display: inline-block;
+    background-color: #FAFAFA;
+    border: none;
+}
+
+.formInputContact:focus {
+    outline: none !important;
+    border: 1px solid #f28500;
+    box-shadow: 0 0 5px #f15c06;
+}
+
+.contactForm {
+    padding-top: 2%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.contactSubmitButton {
+    cursor: pointer;
+    background-color: #4ECDC4;
+    border-radius: 5px;
+    color: #FAFAFA;
+    margin-top: 4%;
+    background-position: center;
+    transition: background 0.8s;
+    outline: none !important;
+    margin-bottom:15px;
+    border:none;
+    width: 40%;
+    font-size:20px;
+    padding:8px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.contactSubmitButton:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%;
+}
+
+.contactSubmitButton:active {
+    background-color: #FAFAFA;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+.pblog {
+    color: rgb(255, 111, 0);
+    display: inline;
+}
