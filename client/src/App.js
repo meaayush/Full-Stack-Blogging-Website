@@ -11,7 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Context } from "./context/Context";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
@@ -19,22 +19,25 @@ import Profile from "./pages/profile/Profile";
 
 function App() {
   const {user} = useContext(Context);
+
+  const [q, setQ] = useState("");
+  console.log(q)
   console.log("user in app.js", user)
   return (
     <Router>
-      <TopBar/>
+      <TopBar q = {q} setQ = {setQ}/>
       <Routes>
         <Route 
           exact path="/" 
-          element={<Home/>}
+          element={<Home q = {q} setQ = {setQ}/>}
         />
         <Route 
           path="/register" 
-          element={user ? <Home /> : <Register/>}
+          element={user ? <Home q setQ/> : <Register/>}
         />
         <Route 
           path="/login" 
-          element={user ? <Home /> : <Login/>}
+          element={user ? <Home q setQ /> : <Login/>}
         />
         <Route 
           path="/newblog" 
@@ -43,6 +46,10 @@ function App() {
         <Route 
           path="/profile" 
           element={user ? <Profile /> : <Register/>}
+        />
+        <Route 
+          path="/settings" 
+          element={user ? <Settings /> : <Register/>}
         />
         <Route 
           path="/about" 

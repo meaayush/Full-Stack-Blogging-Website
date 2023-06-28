@@ -73,3 +73,15 @@
     cursor: pointer;
     margin-left: 15px;
 }
+
+.searchBar{
+
+}
+
+.searchBar > input {
+    border-radius: 10px;
+    width: 14rem;
+    height: 20px;
+    background-color: rgb(236, 242, 242);
+    margin-left: 8px;
+}

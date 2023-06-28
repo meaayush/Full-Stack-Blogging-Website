@@ -1,18 +1,17 @@
 import { Link } from "react-router-dom";
 import "./topbar.css"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 
-export default function TopBar() {
+export default function TopBar(props) {
     const {user, dispatch} = useContext(Context);
-
     const handleLogout = () => {
         dispatch({ type: "LOGOUT" });
     }
 
     let initial = user ? (user.username[0]) : ""
     const PF = "http://localhost:5000/images/"
-    // console.log(user.profilePic)
+    console.log(props)
   return (
     <div className="top">
         <div className="topLeft">
@@ -77,9 +76,9 @@ export default function TopBar() {
                 :
                 (
                     <ul className="topList">
-                        <li className="topListItem">
+                        {/* <li className="topListItem">
                             <Link className="link" to="/login">LOGIN</Link>   
-                        </li>
+                        </li> */}
                         <li className="topListItem">
                             <Link className="link" to="/register">REGISTER</Link>  
                         </li>
@@ -87,7 +86,14 @@ export default function TopBar() {
                 )
             }
             
-            <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+            <div className="searchBar">
+                <input 
+                    type="text" 
+                    placeholder="Search...."
+                    value={props.q}
+                    onChange={(e) => props.setQ(e.target.value)}
+                />
+            </div>
         </div>
     </div>
   )
