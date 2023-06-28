@@ -33,11 +33,11 @@ function App() {
         />
         <Route 
           path="/register" 
-          element={user ? <Home q setQ/> : <Register/>}
+          element={user ? <Home q = {q} setQ = {setQ}/> : <Register/>}
         />
         <Route 
           path="/login" 
-          element={user ? <Home q setQ /> : <Login/>}
+          element={user ? <Home q = {q} setQ = {setQ}/> : <Login/>}
         />
         <Route 
           path="/newblog" 
