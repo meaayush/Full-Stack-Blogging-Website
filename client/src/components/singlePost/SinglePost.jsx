@@ -4,6 +4,7 @@ import { useState, useEffect, useContext } from "react"
 import axios from 'axios'
 import { Link } from "react-router-dom"
 import { Context } from "../../context/Context"
+import Comment from "../comment/Comment"
 
 export default function  SinglePost() {
     const location = useLocation()
@@ -143,6 +144,30 @@ export default function  SinglePost() {
                     Cancel
                 </button>
             }
+            
+            { 
+                user ?
+                <div className="commentInput">
+                    <div className="commentInputTitle">
+                        Enter Your Comment: 
+                    </div>
+                    <textarea name="" id="" cols="80" rows="6" className="commentInputarea"></textarea>
+                    <div className="postCommentButtonWrapper">
+                        <button className="postCommentButton">Post</button>
+                    </div>
+                    
+                </div>
+                : 
+                <></>
+            }
+
+            <div className="allCommentsTitle">
+                Previous Comments
+            </div>
+
+            <div className="lineComment"></div>
+
+            <Comment />
         </div>
     </div>
   )
