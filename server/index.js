@@ -10,7 +10,13 @@ const multer = require("multer")
 const cors = require("cors")
 const path = require("path")
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-1whq.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 dotenv.config();
 app.use(express.json());
