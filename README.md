@@ -1,5 +1,7 @@
 ![1_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/c2fc6c10-72ee-4de7-a34f-3de4fc4dce92)
 
+---
+
 ![2_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/bbff9572-9cc5-4517-ad4c-bcd8b07b742d)
 
 ![login_page](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/038e52fb-0b19-4651-b783-2c0196b0e437)
