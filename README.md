@@ -2,7 +2,7 @@
 
 ---
 
-![2_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/bbff9572-9cc5-4517-ad4c-bcd8b07b742d)
+![7_finsl](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/3b47f785-797a-4a68-9c64-d0611ceaae7b)
 
 ---
 
@@ -26,7 +26,7 @@
 
 ---
 
-![7_finsl](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/3b47f785-797a-4a68-9c64-d0611ceaae7b)
+![2_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/bbff9572-9cc5-4517-ad4c-bcd8b07b742d)
 
 ---
 
