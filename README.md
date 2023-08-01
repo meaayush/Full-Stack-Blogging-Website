@@ -22,7 +22,7 @@
 
 ---
 
-![6_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/606b1dc9-ffa9-452c-b8dc-193e628efa7d)
+![8_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/930ba50d-232b-4faf-bfb3-0ad9a002eb27)
 
 ---
 
@@ -30,6 +30,6 @@
 
 ---
 
-![8_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/930ba50d-232b-4faf-bfb3-0ad9a002eb27)
+![6_final](https://github.com/meaayush/Full-Stack-Blogging-Website/assets/83123197/606b1dc9-ffa9-452c-b8dc-193e628efa7d)
 
 ---
